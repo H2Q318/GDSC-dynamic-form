@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  color: #636363;
+  margin-top: 5%;
+}
+
+#root p {
+  color: #b1b1b1;
+}
+
+#root #wrapperHeader {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px;
+  width: 500px;
+}
+
+#root #wrapperHeader h1 {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#root #wrapperHeader p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+#root #wrapperContent {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 700px;
+  height: 590px;
+}
+
+#root #wrapperContent h2 {
+  margin: 20px 0;
+}
+
+#root #wrapperContent h3 {
+  margin: 15px 0 5px;
+}
+
+#root #wrapperContent input[type='SHORT_TEXT'],
+#root #wrapperContent input[type='NUMBER'] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 680px;
+}
+
+#root #wrapperContent input[type='SHORT_TEXT'].invalid,
+#root #wrapperContent input[type='NUMBER'].invalid,
+#root #wrapperContent textarea.invalid {
+  border: 1px solid #ff5252;
+}
+
+#root #wrapperContent textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 680px;
+  height: 70px;
+  resize: none;
+}
+
+#root #wrapperContent p {
+  margin: 5px 0;
+  color: #b1b1b1;
+}
+
+#wrapperContent #wrapperOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapperContent #wrapperOptions #wrapperOption {
+  margin: 5px 0;
+}
+
+#wrapperContent #wrapperOptions #wrapperOption input {
+  margin-right: 5px;
+}
+
+#root #wrapperContent .d-none {
+  display: none;
+}
+
+#wrapperFooter .btn {
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 150px;
+}
+
+#wrapperFooter .btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#wrapperFooter .btn.btnPrevious {
+  position: absolute;
+  top: 675px;
+  left: 500px;
+}
+
+#wrapperFooter .btn.btnNext {
+  position: absolute;
+  top: 675px;
+  left: 690px;
+}
+
+#wrapperFooter .btn.btnPrevious.disabled,
+#wrapperFooter .btn.btnNext.disabled {
+  opacity: 0.2;
+}
+
+#wrapperFooter .btn.disabled:hover {
+  cursor: default;
+}
